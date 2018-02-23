@@ -1,16 +1,53 @@
-<h2>Resend confirmation instructions</h2>
 
-<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+
+
+
+
+<div class="container">
+  <div class="  container ">
+
+
+    <div class="row " style="margin: 80px;">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="light-well  ">
+
+          <h2 class="page-header text-center">
+
+            <img src="assets/img/favicon.PNG" alt=""> <br>
+             Resend confirmation instructions
+          </h2>
+
+          <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+          <%= devise_error_messages! %>
+
+          <div class="form-group">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), class: "form-control" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.submit "Resend confirmation instructions", class: "button btn btn-block btn-primary " %>
+          </div>
+          <% end %>
+
+        < %= render "users/shared/links" %>
+
+                  <div>
+
+          <br />
+
+
+
+
+              <!--   # https://github.com/plataformatec/devise/wiki/How-To:-OmniAuth-inside-localized-scope -->
+          <br />
+
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Resend confirmation instructions" %>
-  </div>
-<% end %>
-
-<%= render "users/shared/links" %>
+</div>
