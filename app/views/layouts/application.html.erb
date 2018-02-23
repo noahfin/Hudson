@@ -8,11 +8,32 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <body data-spy="scroll" data-target="#navbar_main" data-offset="80">
+
 
 
     <%= yield %>
   </body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+ <!--  <script src="/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> -->
+   <%= javascript_include_tag '/assets/sitewide/bootstrap/js/bootstrap.min.js' %>
+
+    <!-- JS Plugins -->
+    <!-- <script src="/assets/sitwide/plugins/smoothscroll/smoothscroll.min.js" type="text/javascript"></script> -->
+     <%= javascript_include_tag '/assets/sitewide/plugins/smoothscroll/smoothscroll.min.js' %>
+   <!--  <script src="/assets/sitewide/plugins/backstretch/jquery.backstretch.min.js" type="text/javascript"></script> -->
+     <%= javascript_include_tag '/assets/sitewide/plugins/backstretch/jquery.backstretch.min.js' %>
+    <script src="/assets/sitewide/plugins/contact-form/contact.js" type="text/javascript"></script>
+
+    <script src="/assets/sitewide/plugins/waypoints/jquery.waypoints.min.js" type="text/javascript"></script>
+
+
+
+    <!-- JS Custom -->
+    <!--build:js assets/js/theme.js -->
+
+    <%= javascript_include_tag 'theme' %>
+\    <!-- endbuild -->
+    <%= javascript_include_tag 'custom' %>
 </html>

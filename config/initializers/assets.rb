@@ -1,5 +1,11 @@
-# Be sure to restart your server when you modify this file.
-
+# Be sure to restart your server when you modify this file.  bootstrap.min.js
+Rails.application.config.assets.precompile += %w( theme.js )
+Rails.application.config.assets.precompile += %w( custom.js )
+Rails.application.config.assets.precompile += %w( bootstrap.min.js)
+Rails.application.config.assets.precompile += %w( smoothscroll.min.js )
+Rails.application.config.assets.precompile += %w( jquery.backstretch.min.js )
+Rails.application.config.assets.precompile += %w(contact.js)
+Rails.application.config.assets.precompile += %w(jquery.waypoints.min.js)
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
 

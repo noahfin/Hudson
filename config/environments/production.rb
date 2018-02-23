@@ -1,3 +1,6 @@
+
+Rails.application.config.assets.precompile += %w( theme.js )
+Rails.application.config.assets.precompile += %w( custom.js )
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 

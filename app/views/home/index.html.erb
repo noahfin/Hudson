@@ -1,2 +1,675 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+
+    <!-- PRELOADER
+    ================================================== -->
+    <div class="preloader">
+      <img src="/assets/spinner.svg" alt="Loading..." class="preloader__spinner">
+    </div>
+
+    <!-- MODAL
+    ================================================== -->
+    <div class="modal fade" id="modal_portfolio" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio__heading">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="modal_portfolio__heading"></h4><span>Request more</span>
+          </div>
+          <div class="modal-body">
+             <%= image_tag "1.jpg", id: "modal_portfolio__img", class: "img-responsive" %>
+            <p id="modal_portfolio__content"></p>
+            <button type="button" class="btn btn-primary" id="Request-more" data-dismiss="modal" aria-label="Close">
+             Request More
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
+
+        <!-- Brand name -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_main" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="layouts.html">Hudson Commercial</a>
+        </div>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbar_main">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="#section_banner">Welcome</a>
+            </li>
+            <li><a href="#section_services">Services</a></li>
+            <li><a href="#section_features">Features</a></li>
+            <li><a href="#section_team">Team</a></li>
+            <li><a href="#section_pricing">Pricing</a></li>
+            <li><a href="#section_testimonials">Testimonials</a></li>
+            <li><a href="#section_news">News</a></li>
+            <li><a href="#section_newsletter">Sign Up</a></li>
+            <li><a href="#section_contact">Contact</a></li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <!-- BANNER
+    ================================================== -->
+    <section class="section_banner" id="section_banner">
+
+      <!-- Images -->
+      <div class="banner__carousel__img"
+           data-images="/assets/nathan-oh-425911.jpg">
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+
+            <h1 class="page-header text-white text-left animate-down animate-xs-step-0">
+              Best Commercial Real Estate Firm
+             <br>
+              In the Hudson Valley
+            </h1>
+            <p class="page-subheader text-white-muted text-left animate-down animate-xs-step-1">
+              We are a Commercial Real Estate firm that specializes in using cutting edge technology and experience sales experts to bring owners and users to together to make successful real estate transactions.
+            </p>
+            <div class="text-left">
+              <a href="#section_services" class="btn btn-primary animate-down animate-xs-step-2">
+                Find out more
+              </a>
+            </div>
+
+          </div>
+          <div class="col-sm-6 col-lg-4 col-lg-offset-1">
+
+            <div class="banner__form">
+
+              <h3 class="page-header">
+                GET YOUR FREE REPORT!
+              </h3>
+
+               <!-- Begin MailChimp Signup Form -->
+
+              <form action="https://hudsoncommercial.us14.list-manage.com/subscribe/post?u=ce5cff7c71dd8cdb6496dc1fa&amp;id=04efe69ed2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" >
+                  <div id="mc_embed_signup_scroll form-group">
+
+
+                  <div class="mc-field-group">
+                      <label for="mce-FNAME">Name </label>
+                      <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" >
+                       <span class="help-block"></span>
+                  </div>
+                  <div class="mc-field-group">
+                      <label for="mce-EMAIL">Email Address
+                  </label>
+                      <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL">
+                       <span class="help-block"></span>
+                  </div>
+
+                  <input type="hidden" value="" name="LNAME" class="" id="mce-LNAME">
+
+                  <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <input  type="hidden" type="text" name="b_ce5cff7c71dd8cdb6496dc1fa_04efe69ed2" tabindex="-1" value="">
+                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-block btn-primary"></div>
+                  </div>
+              </form>
+
+            </div> <!-- / .banner__form -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- SERVICES
+    ================================================== -->
+
+    <section class="section_services" id="section_services">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h2 class="page-header text-center">
+              Our main <span>Services</span>
+            </h2>
+
+            <p class="page-subheader text-center">
+              Hudson Commercial Real Estate specializes in office and industrial space for sale or lease in the Mid-Hudson Valley, NY. Below are our some of our current exclusive listings. We maintain an extensive database of commercial real estate properties in the region; if you don't see what you're looking for, contact us for the most up-to-date listing information.
+            </p>
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-6">
+
+            <div class="services__item animate-sm-step-0" data-animate="animate-up">
+              <h3 class="services__item__heading page-header text-center">
+                Buy or Lease
+              </h3>
+              <div class="services__item__icon">
+                <i class="ion-social-android"></i>
+              </div>
+              <div class="services__item__content">
+              Marketing to more customers will help increases the probability of making a deal. We have access to large databases of thousands potential users to help increase the odds of getting the highest price possible.  We are looking out for your best financial interests and needs. Our direct responsibility is to engage and serve our clients, offering a multidimensional perspective, honed from 44 years of experience, training and accumulated knowledge and the use of cutting edge technology.
+              </div>
+              <a href="#section_contact" class="services__item__btn btn btn-primary">
+                Contact Us
+              </a>
+            </div> <!-- / .services__item -->
+
+          </div>
+          <div class="col-sm-6">
+
+            <div class="services__item animate-sm-step-1" data-animate="animate-up">
+              <h3 class="services__item__heading page-header text-center">
+               Sell or Rent
+              </h3>
+              <div class="services__item__icon">
+                <i class="ion-social-twitter"></i>
+              </div>
+              <div class="services__item__content">
+                Greater choice increases the probability of finding the best possible match for your needs. We have a team of sales agents and professionals who can do the hard work for you. We are able to hunt down hidden listings and our work does not stop there. We will also continue to negotiating terms, help you get get approvals.  We like to close deals as if it was our own, since the head broker is also a owner and developer he goes above and beyond and is definitely someone you on your team.
+              </div>
+              <a href="#section_contact" class="services__item__btn btn btn-primary">
+                Contact Us
+              </a>
+            </div> <!-- / .services__item -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    <!-- Properties
+    ================================================== -->
+    <section class="section_portfolio" id="section_portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+             <h2 class="page-header text-center">
+              Below are some of our <span>current listings</span>
+             </h2>
+
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="/assets/DSC_0015.JPG" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    Class A Office Building for Lease
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="2678 South Road (Rte. 9), Poughkeepsie, NY 12601" data-img="assets/DSC_0015.JPG" data-content="Full Service Lease includes nightly cleaning!!! Only extra is utilities. Class A professional office building in a prime location on a campus-like setting">
+                      Veiw Property
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="/assets/J&J.JPG" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    Upscale Auto Repair Shop For Sale
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="6787 Route 9 Rhinebeck, NY 12572 " data-img="assets/img/J&J.JPG" data-content="Turn-key auto repair property and business for sale in Rhinebeck, NY on a high-traffic road in a well-to-do, undeserved market. Contact us to find out more information">
+                      Veiw Property
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="/assets/1970-warehouse.jpg" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    Warehouse Space for lease
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="1970 Route 9W Milton, NY 12547" data-img="/assets/1970-warehouse.jpg" data-content="Both buildings on 1.9 acres are available for sale. The 17,176SF south building and 4,500SF of outdoor storage are for lease at $4.50/SF modified gross.">
+                      Veiw Property
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="/assets/19-baker.jpg" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    Medical Arts Building For Lease
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="19 Baker Avenue, Poughkeepsie, NY 12601" data-img="/assets/19-baker.jpg" data-content="Class A medical/office space available in this premier building. Medical Arts Building Adjacent to Mid-Hudson Regional Hospital of Westchester Medical Cente. Contact us to find out more information">
+                      Veiw Property
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="/assets/235-main2.jpg" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    Large Updated Office Building For Sale
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="2622 South Ave, V/Wappingers, NY 12590" data-img="/assets/235-main2.jpg" data-content="This 3 story office building is adjacent to the Mid-Hudson Civic Center and located at the hub of City of Poughkeepsie activity. Transportation connections are excellent. It is near the Mid-Hudson Bridge, the Metro-North train station, the East-West Arterial (Rt. 44/55) and on the local bus routes">
+                      Veiw Property
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="/assets/38-route9.jpg" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    24,393 SF Lot with Former C-Store
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="4357 Albany Post Rd
+                    Hyde Park, NY 12538" data-img="/assets/38-route9.jpg" data-content="Available Immediately.
+                    Additional information and details available. Please contact us get more information.">
+                      Veiw Property
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container-fluid -->
+    </section>
+
+
+
+
+   <!-- TEAM
+    ================================================== -->
+    <section class="section_team section_alt" id="section_team">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h2 class="page-header text-center">
+              Our <span>hardworking</span> team
+            </h2>
+
+            <p class="page-subheader text-center">
+              A team of hard-working enthusiastic people who can help you get the job done.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-4">
+
+            <div class="team__item animate-sm-step-0" data-animate="animate-up">
+              <div class="team__item__img pro-img">
+                <img src="/assets/user_1.jpg" class="img-responsive" alt="...">
+              </div>
+              <div class="team__item__footer">
+                <h3 class="team__item__footer__heading">
+                  Sam Finnerman<small>/ Real Estate Broker</small>
+                </h3>
+                <div class="team__item__footer__content">
+                  Although I have been in the commercial real estate field for over 44 years, my passion for the work of mastering the craft of real estate brokerage and real estate investing is ever increasing.
+                </div>
+              </div>
+            </div> <!-- / .team__item -->
+
+          </div>
+          <div class="col-sm-4">
+
+            <div class="team__item animate-sm-step-1" data-animate="animate-up">
+              <div class="team__item__img pro-img">
+                <img src="/assets/user_2.png" class="img-responsive" alt="...">
+              </div>
+              <div class="team__item__footer">
+                <h3 class="team__item__footer__heading">
+                 Adriaan Finnerman<small>/ Business Manager</small>
+                </h3>
+                <div class="team__item__footer__content">
+                  I like to provide unparalleled service and expertise through timely deliverables of reports and real estate documents to clients. I also provide skills in database management and integration.
+                </div>
+              </div>
+            </div> <!-- / .team__item -->
+
+          </div>
+          <div class="col-sm-4">
+
+            <div class="team__item animate-sm-step-2" data-animate="animate-up">
+              <div class="team__item__img pro-img">
+                <img src="https://avatars0.githubusercontent.com/u/1664019?s=400&u=744483325f9d583cb4ff12baacfa37f563d01b37&v=4" class="img-responsive" alt="...">
+              </div>
+              <div class="team__item__footer">
+                <h3 class="team__item__footer__heading">
+                  Noah Finnerman <small>/ Sales and Engineer</small>
+                </h3>
+                <div class="team__item__footer__content">
+                   I build technologies that help to streamline the process of getting deals done. I am also looking for new ways I can improve and make deals happen. I have a passion for leasing office buildings and warehouses.
+                </div>
+              </div>
+            </div> <!-- / .team__item -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- TESTIMONIALS
+    ================================================== -->
+    <section class="section_testimonials section_alt" id="section_testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h2 class="page-header text-center">
+              What <span>clients</span> say about us
+            </h2>
+
+            <p class="page-subheader text-center">
+              Effective and timely feedback is a critical component of a successful collaboration.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-4">
+
+            <blockquote class="testimonials__blockquote animate-sm-step-0" data-animate="animate-up">
+              <p>
+                I have had the pleasure of working with Sam on the recent lease negotiations with one of our 4 office locations. Sam's professional demeanor and sensible approach resulted in a win-win resolution with our negotiations.
+              </p>
+              <footer>
+                <img src="/assets/avatar_3.png" class="img-responsive" alt="...">
+                <div>
+                  <h3 class="h5">Kevin M. Ryan</h3>
+                  <cite>The Valley Group, Inc.</cite>
+                </div>
+              </footer>
+            </blockquote>
+
+          </div>
+          <div class="col-sm-4">
+
+            <blockquote class="testimonials__blockquote animate-sm-step-1" data-animate="animate-up">
+              <p>
+               I wanted to take an opportunity to thank you for your assistance in finding a commercial location for my new business venture. Your knowledge of the real estate business and your contacts in the area were invaluable in landing what I believe will be an ideal location for my new store.
+              </p>
+              <footer>
+                <img src="/assets/avatar_2.png" class="img-responsive" alt="...">
+                <div>
+                  <h3 class="h5">Dale Stackhouse,</h3>
+                  <cite>Absolutely Amish Furniture</cite>
+                </div>
+              </footer>
+            </blockquote>
+
+          </div>
+          <div class="col-sm-4">
+
+            <blockquote class="testimonials__blockquote animate-sm-step-2" data-animate="animate-up">
+              <p>
+                Don and I would like to thank you for a skillful and successful negotiation that has brought the Mediation Center to a beautiful new home. Your months of hard work seeking out potential office space, working through numerous details and having many conversations with all of us, have truly paid off.
+              </p>
+              <footer>
+                <img src="/assets/avatar_1.png" class="img-responsive" alt="...">
+                <div>
+                  <h3 class="h5">Jody B. Miller and Don Murphy</h3>
+                  <cite>Mediation Center of Dutchess County</cite>
+                </div>
+              </footer>
+            </blockquote>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <section class="section_newsletter" id="section_newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <h2 class="page-header text-center">
+              Free <span>sign up</span>
+            </h2>
+
+            <p class="page-subheader text-center">
+             When it comes to buying, selling or leasing in the Hudson Valley it’s best to stay current on what's available in the market. We can email you property information not just on our listing, but also from other brokers and hard to find owners.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-xs-12">
+
+
+            <form class="form-inline text-center" action="https://hudsoncommercial.us14.list-manage.com/subscribe/post?u=ce5cff7c71dd8cdb6496dc1fa&amp;id=04efe69ed2" method="post" id="" name="mc-embedded-subscribe-form" class="validate" target="_blank" >
+              <div class="form-group">
+                <label for="name_2" class="sr-only">Your name</label>
+                <input type="text" class="form-control" id="name_2" placeholder="Your name"  type="text" value="" name="FNAME" class="form-control" id="m" >
+              </div>
+              <div class="form-group">
+                <label for="email_2" class="sr-only">Email address</label>
+                <input  type="email" value="" name="EMAIL" class="form-control " id="m" required aria-required="true" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" placeholder="Email address">
+              </div>
+               <input  type="hidden" type="text" name="b_ce5cff7c71dd8cdb6496dc1fa_04efe69ed2" tabindex="-1" value="">
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+        <!-- CONTACT
+    ================================================== -->
+    <section class="section_contact" id="section_contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h2 class="page-header text-center">
+              Get in touch <span>with us</span>
+            </h2>
+
+            <p class="page-subheader text-center">
+              Let us know what you are looking for and we can email you a detailed report of what is avialible for free
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-xs-12">
+
+            <div class="contact__container">
+              <div class="row">
+                <div class="col-sm-8">
+
+                   <form class="contact__container__form" id="mc-embedded-subscribe-form" action="https://hudsoncommercial.us14.list-manage.com/subscribe/post?u=ce5cff7c71dd8cdb6496dc1fa&amp;id=608f399608" method="post"  name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                    <!-- Header -->
+                    <div class="form-group">
+                      <h3>Request Property Information Or Our Assistance</h3>
+                    </div>
+
+                    <!-- Alert message -->
+                    <div class="alert" id="form_message" role="alert"></div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label for="email" class="sr-only">Email address </label>
+                      <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Enter your email address">
+                      <span class="help-block"></span>
+                    </div>
+
+                    <!-- Name -->
+                    <div class="form-group">
+                      <label for="name" class="sr-only">Name </label>
+                      <input type="text" name="mce-FNAME" class="form-control" id="mce-FNAME" placeholder="Enter your full name">
+                      <span class="help-block"></span>
+                    </div>
+                    <div class="form-group">
+                      <label  class="sr-only" for="mce-PHONE">Phone Number </label>
+                      <input type="text" name="PHONE" class="form-control" value="" id="mce-PHONE"  placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                      <label for="mce-MMERGE4" class="sr-only">Company Name </label>
+                      <input type="text" value="" name="MMERGE4" class="form-control" id="mce-MMERGE4" placeholder="Enter your company name">
+                       <span class="help-block"></span>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                      <label for="message" class="sr-only">Message *</label>
+                      <textarea name="message" class="form-control" id="mce-MMERGE5" name="MMERGE5" placeholder="Enter Your Requirements"></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ce5cff7c71dd8cdb6496dc1fa_608f399608" tabindex="-1" value=""></div>
+
+                    <!-- Submit -->
+                    <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+                      Send Request
+                    </button>
+
+                  </form>
+
+
+                </div>
+                <div class="col-sm-4">
+
+                  <ul class="contact__container__info">
+                    <li>
+                      <h3>Contact info</h3>
+                    </li>
+                    <li>
+                     <li>
+                      <h4>HUDSON COMMERCIAL REAL ESTATE CORP.</h4>
+                    </li>
+                    <li>
+                      <i class="ion-android-pin"></i>
+                      <p>
+                        22 IBM Rd., Suite 101 <br>
+                        Poughkeepsie, NY 12601-546
+                      </p>
+                    </li>
+                    <li>
+                      <i class="ion-android-call"></i>
+                      <p>
+                        <a href="tel:845-454-1444">(tel) +1 (845)-454-1444</a>
+                      </p>
+                    </li>
+                    <li>
+                      <i class="ion-printer"></i>
+                      <p>
+                        <a href="fax:845-454-4912">(fax) +1 (845)-454-4912</a>
+                      </p>
+                    </li>
+                    <li>
+                      <i class="ion-android-mail"></i>
+                      <p>
+                        <a href="mailto:info@hudsoncommercial.com">info@hudsoncommercial.com</a>
+                      </p>
+                    </li>
+                  </ul>
+
+                </div>
+              </div> <!-- / .row -->
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="section_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+
+            <img style="width: 60%;" src="assets/img/logo2.png">
+
+
+          </div>
+          <div class="col-sm-3">
+
+            <ul class="footer__social">
+              <li>
+                <a class="twitter" href="#">
+                  <i class="ion-social-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="facebook" href="#">
+                  <i class="ion-social-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a class="pinterest" href="#">
+                  <i class="ion-social-pinterest"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
